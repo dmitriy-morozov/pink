@@ -1,0 +1,100 @@
+
+/* diagram */
+.diagram {
+	display: none;
+
+
+	@media @tablet-widths {
+		.container();
+		display: block;
+		min-height: 400px;
+		
+	}
+
+	@media @desktop-widths{
+		.container();
+		margin-top: -10px;
+		background: @gray-light;
+	}
+
+}
+
+.diagram-wrap {
+	
+	@media @tablet-widths {
+
+		display: block;
+		min-height: 400px;
+		background: url("../img/diagram.png") no-repeat 0 25%;
+
+	}
+
+	@media @desktop-widths{
+		.container();
+		min-height: 490px;
+		background: url("../img/diagram-des.png") no-repeat 0 45%;
+
+	}
+}
+
+.diagram__wrapper {
+
+	@media @tablet-widths {
+		width:50%;
+		float:right;
+		text-align: left;
+	}
+
+	@media @desktop-widths {
+		width:61%;
+		float:right;
+		padding-top:50px;
+		text-align: left;
+
+	}
+}
+
+.diagram__title {
+	@media @tablet-widths {
+		width:53%;
+		padding-top: 45px;
+		font-size: @font-size-medium_desktop;
+		line-height: 36px;
+		font-weight: bold;
+		color:@black;
+	}
+}
+
+
+
+.diagram__text {
+	@media @tablet-widths {
+		margin-top: -20px;
+		margin-right:10px;
+		font-size: @font-size-base;
+		color:@blue-medium;
+		line-height: 24px;
+	}
+	
+	@media @desktop-widths {
+		font-size: 19px;
+		line-height: 30px;
+		padding:10px 0 10px;
+
+	}
+	
+}
+
+.diagram__link {
+
+	@media @tablet-widths {
+		font-family: "OpenSansRegular";
+		text-decoration: underline;
+		color:@red;
+	}
+
+	@media @desktop-widths {
+		
+
+	}
+}
