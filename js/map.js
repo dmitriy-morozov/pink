@@ -1,1 +1,1 @@
-function initMap(){var e=new google.maps.Map(document.getElementById("map"),{zoom:14,disableDefaultUI:!0,zoomControl:!0,center:{lat:59.93632276,lng:30.32106467},scrollwheel:!1}),o="img/map-marker.png";new google.maps.Marker({position:{lat:59.93632276,lng:30.32106467},map:e,icon:o})}
+function initMap(){var e=new google.maps.Map(document.getElementById("map"),{zoom:14,disableDefaultUI:!0,zoomControl:!0,center:{lat:59.93632276,lng:30.32106467},scrollwheel:!1});new google.maps.Marker({position:{lat:59.93632276,lng:30.32106467},map:e,icon:"img/map-marker.png"})}
