@@ -1,182 +1,181 @@
-
-
 /* Reviews */
 
-.reviews{
-	position:relative;
-	@media @desktop-widths{
-		padding-top: 170px;
-		background: url("../img/quotes.png") no-repeat 50% 20%;
+.reviews {
+  position: relative;
+  @media @desktop-widths {
+    padding-top: 170px;
+    background: url("../img/quotes.png") no-repeat 50% 20%;
 
-	}
+  }
 }
 
 .reviews__list {
-	text-align: center;
-	position:relative;
-	margin-top:-5px;
-	padding:0;
+  text-align: center;
+  position: relative;
+  margin-top: -5px;
+  padding: 0;
 }
 
-.reviews__item{
-	position:relative;
-	margin-top:50px;
-	padding:0;
-	font-size: @font-size-base;
-	color:@black;
-	line-height: 30px;
+.reviews__item {
+  position: relative;
+  margin-top: 50px;
+  padding: 0;
+  font-size: @font-size-base;
+  color: @black;
+  line-height: 30px;
 
-	@media @tablet-widths {
-		margin-top:15px;
-		padding-bottom: 100px;
-	}
+  @media @tablet-widths {
+    margin-top: 15px;
+    padding-bottom: 100px;
+  }
 
+  .reviews__author-name {
+    font-size: @font-size-medium;
+    font-weight: bold;
 
-	.reviews__author-name {
-		font-size: @font-size-medium;
-		font-weight: bold;
+    @media @tablet-widths {
+      position: absolute;
+      left: 50%;
+      transform: translatex(-50%);
+      bottom: 20px;
+      font-size: 20px;
+    }
 
-		@media @tablet-widths {
-			position:absolute;
-			left:50%;
-			transform:translatex(-50%);
-			bottom:20px;
-			font-size: 20px;
-		}
+    @media @desktop-widths {
+      bottom: 0px;
+    }
 
-		@media @desktop-widths{
-			bottom:0px;}
+  }
 
-		}
+  .review__description {
+    display: none;
 
-		.review__description{
-			display: none;
+    @media @tablet-widths {
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translatex(-50%);
+      bottom: 0;
+    }
 
+    @media @desktop-widths {
+      bottom: -20px;
+    }
 
-			@media @tablet-widths {
-				display: block;
-				position:absolute;
-				left:50%;
-				transform:translatex(-50%);
-				bottom:0;
-			}
+  }
 
-			@media @desktop-widths{
-				bottom:-20px;}
+  q {
+    color: @blue-medium;
 
-			}
+    @media @tablet-widths {
+      font-size: @font-size-small_tablet;
+      line-height: 30px;
+    }
 
-			q { 
-				color:@blue-medium;
+  }
+}
 
-				@media @tablet-widths {
-					font-size: @font-size-small_tablet;
-					line-height: 30px;
-				}
+.slider__review { display: none; }
 
-			}
-		}
+.hide { display: none; }
 
-		.slider__review {display: none;}
-		.hide {display: none;}
+/* slider-review */
 
+.slider-box {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  text-align: center;
+  overflow: hidden;
 
+  @media @desktop-widths {
+    width: 70%;
+  }
 
+}
 
-		/* slider-review */
+.slider {
+  min-height: 210px;
+  position: relative;
+  text-align: center;
+}
 
+.reviews__item {
+  width: 100vw;
+  float: left;
+}
 
+.slider--no-js {
+  display: inline-block;
+  width: 100%;
+}
 
-		.slider-box{
-			width:100%;
-			text-align: center;
-			margin: 0 auto;
-			padding-bottom: 50px;
-			text-align: center;
-			overflow: hidden;
+.slider-box .prev, .slider-box .next {
+  display: none;
 
-			@media @desktop-widths{
-				width:70%;
-			}
+  @media @desktop-widths {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 22px;
+    height: 41px;
+    cursor: pointer;
+    z-index: 55;
+  }
+}
 
-		}
-		.slider{
-			width:32080px;
-			min-height:210px;
-			position:relative;
-			text-align: center;
-		}
+.slider-box .prev {
+  left: 130px;
+  background: url(../img/left-arrow.png) no-repeat 0 0;
+}
 
+.slider-box .next {
+  right: 130px;
+  background: url(../img/right-arrow.png) no-repeat 0 0;
+}
 
-		.reviews__item{
-			width:100px;
-			float:left;
-		}
-		
+.bullets {
+  position: relative;
+  bottom: -20px;
+  left: 50%;
+  transform: translatex(-50%);
+  height: 31px;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 
-		.slider--no-js {
-			display: inline-block;
-			width:100%;
-		}
+  @media @desktop-widths {
+    display: none;
+  }
 
-		
-		
-		.slider-box .prev, .slider-box .next{
+}
 
-			display: none;
+.bullets li {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 6px;
+  border-radius: 50%;
+  background: @blue-dark;
+  opacity: 0.3;
+  vertical-align: middle;
 
-			@media @desktop-widths{
-				display:block;
-				position:absolute;
-				top:50%;
-				width:22px;
-				height:41px;
-				cursor:pointer;
-				z-index: 55;
-			}
-		}
+  &:hover {
+    cursor: pointer;
+  }
 
+  button {
+    display: none;
+  }
 
-		.slider-box .prev{
-			left:130px;
-			background:url(../img/left-arrow.png) no-repeat 0 0;
-		}
-		.slider-box .next{
-			right:130px;
-			background:url(../img/right-arrow.png) no-repeat 0 0;
-		}
-		.bullets{
-			position:absolute;
-			bottom:0px;
-			left:50%;
-			transform:translatex(-50%);
-			height:31px;
-			vertical-align: middle;
-			padding:0;
-			margin:0;
-			list-style:none;
-
-			@media @desktop-widths{
-				display: none;}
-
-			}
-			.bullets li{
-
-				display: inline-block;
-				width:6px;
-				height:6px;
-				margin:0 6px;
-
-				border-radius: 50%;
-				background:@blue-dark;
-				opacity: 0.3;
-				vertical-align: middle;
-			}
-			.bullets li.active{
-				box-sizing: content-box;
-				background:white;
-				border:3px solid @blue-dark;
-				opacity:1;
-			}
+  &.slick-active {
+    box-sizing: content-box;
+    background: white;
+    border: 3px solid #1d2630;
+    opacity: 1;
+  }
+}
 
 
