@@ -522,7 +522,7 @@ body {
   text-align: center;
 }
 .reviews__item {
-  width: 100px;
+  width: 100vw;
   float: left;
 }
 .slider--no-js {
